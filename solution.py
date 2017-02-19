@@ -52,7 +52,7 @@ def naked_twins(values):
     Go through all the units and check for the existence of same value of multiple boxes in each units.
 
     If the same value exists within the unit, then check the length of the values with the number of boxes found with that value. If both the lengths are same,
-    then replace the digits of this value from other boxes of that unit. Ex - if the value of a box is '23', then naked twins will try to find 
+    then remove the digits of this value from the value of other boxes of that unit. Ex - if the value of a box is '23', then naked twins will try to find 
     the value '23' in other boxes within that unit and if found then the value '23' should be present only in 2 boxes within that units. Then eliminate
     the value from values of the other boxes in the unit. 
 

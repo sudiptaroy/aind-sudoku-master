@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: Go through all the units and check for the existence of same value of multiple boxes in each units.
+A: Go through all the units and check for the existence of same value in multiple boxes in each units.
 
-   If the same value exists within the unit, then check the length of the values with the number of boxes found with that value. If both the lengths are same, then replace the digits of this value from other boxes of that unit. Ex - if the value of a box is '23', then naked twins will try to find the value '23' in other boxes within that unit and if found then the value '23' should be present only in 2 boxes within that units. Then eliminate the value from values of the other boxes in the unit. 
+   If the same value exists within the unit, then check the length of the values with the number of boxes found with that value. If both the lengths are same, then remove the digits of this value from the values of other boxes of that unit. Ex - if the value of a box is '23', then naked twins will try to find the value '23' in other boxes within that unit and if found then the value '23' should be present only in 2 boxes within that units. Then eliminate the digits 2&3 from values of the other boxes in the unit. 
 
-   Similarly if the value of a box is '123', then naked twins will try to find the value '123' in other boxes within that unit and if found then the value '123' should be present only in 3 boxes within that units which is equal to the length of the value. Then eliminate the value from values of the other boxes in the unit. 
+   Similarly if the value of a box is '123', then naked twins will try to find the value '123' in other boxes within that unit and if found then the value '123' should be present only in 3 boxes within that units which is equal to the length of the value. Then eliminate the digits 1,2,3 from values of the other boxes in the unit. 
 
 
 # Question 2 (Diagonal Sudoku)
